@@ -1,0 +1,57 @@
+/* 1. Fondo con Imagen */
+body {
+  margin: 0;
+  padding: 0;
+  /* Aquí pones la ruta o el nombre de tu imagen */
+ background-image: url('../img/img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Esto hace que el fondo se quede quieto al hacer scroll */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. Glassmorphism Refinado (Ajustado para fondos oscuros) */
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* Ligeramente más transparente */
+  border-radius: 20px;
+  backdrop-filter: blur(12px); /* Blur un poco más suave para dejar ver el paisaje */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Sombra más oscura para dar profundidad sobre el fondo gris/negro */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6); 
+  transition: all 0.3s ease;
+}
+
+/* 3. Estilo para las Tarjetas de Canvas */
+.canvas-container {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+canvas {
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
+  /* Fondo un poco oscuro para el canvas para no desentonar con la imagen */
+  background: rgba(0, 0, 0, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* 4. Títulos y Textos */
+h1 {
+  font-weight: 800;
+  /* Sombra de texto un poco más fuerte para asegurar que se lea bien */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); 
+}
+
+h5 {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
